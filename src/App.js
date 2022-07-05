@@ -1,15 +1,16 @@
 import React from 'react';
-import Navbar from './components/Navbar';
 import './App.css';
-import Home from './components/pages/Home';
 import { Routes, Route } from 'react-router-dom';
+import Home from './components/pages/Home';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
-import Footer from './components/Footer';
 
+/* 
+colocar elementos que cambian y se editan
+*/
 function App() {
-  return (
+  return ( 
       <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/services' element={<Services/>} />
